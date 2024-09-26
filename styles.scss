@@ -1,12 +1,23 @@
 $primary-color: #ffd700;
 $secondary-color: #8b8b8b;
+$button-color: #00ced1;
+$yellow: #ffd700;
+$triangle-size: 10px;
+$font-size: 16px;
 $font-family: "Arial", sans-serif;
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 body {
     font-family: $font-family;
-    margin: 0;
+    font-size: $font-size;
+    background-color: #f5f5f5;
+    margin: 5%;
     padding: 0;
-    background-color: #f9f9f9;
 }
 
 .container {
@@ -16,24 +27,91 @@ body {
     background-color: #fff;
     border-radius: 8px;
     padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .step-nav {
     display: flex;
-    justify-content: space-between;
+    position: relative;
+    justify-content: space-around;
     margin-bottom: 20px;
-    
+    padding: 10px;
+
     .step {
+        flex: 1;
+        text-align: center;
         padding: 10px;
         background-color: $secondary-color;
-        color: white;
+        margin: 1px;
         cursor: pointer;
-        text-align: center;
         font-weight: bold;
+        color: #fff;
 
         &.active {
             background-color: $primary-color;
-            color: black;
+            color: #000;
+        }
+    }
+
+    .triangle {
+        position: absolute;
+        bottom: -$triangle-size;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-left: $triangle-size solid transparent;
+        border-right: $triangle-size solid transparent;
+        border-top: $triangle-size solid $primary-color;
+        transition: all 0.3s ease;
+    }
+}
+
+.step-content {
+    margin-top: 20px;
+
+    form {
+        display: flex;
+        flex-direction: column;
+
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #30435c;
+        }
+
+        select {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid $secondary-color;
+            font-size: $font-size;
+            width: 100%;
+            outline: none;
+            background-color: #fff;
+            border-radius: 10px;
+        }
+
+        .input-group {
+            position: relative;
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+
+            span {
+                font-weight: bold;
+                margin-left: 10px;
+            }
+        }
+
+        button {
+            padding: 10px;
+            background-color: $button-color;
+            border: none;
+            border-radius: 4px;
+            color: #fff;
+            cursor: pointer;
+            font-weight: bold;
+            width: 25%;
+            margin-top: 10px;
         }
     }
 }

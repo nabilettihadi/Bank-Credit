@@ -12,8 +12,52 @@
             <div class="step active" id="step1">1 <br> Simuler mon crédit</div>
             <div class="step" id="step2">2 <br> Mes coordonnées</div>
             <div class="step" id="step3">3 <br> Mes infos personnelles</div>
+            <div class="triangle"></div>
         </div>
         <div class="step-content">
+            <div class="step-content" id="step-1">
+                <form id="loan-form">
+                    <label for="project">Mon projet</label>
+                    <select id="project">
+                        <option value="argent">J'ai besoin d'argent</option>
+                        <option value="vehicule-occasion">Je finance mon véhicule d’occasion</option>
+                        <option value="imprevus">Je Gère mes imprévus</option>
+                        <option value="vehicule-neuf">Je finance mon véhicule neuf</option>
+                        <option value="maison">J’équipe ma maison</option>
+                    </select>
+            
+                    <label for="profession">Je suis</label>
+                    <select id="profession">
+                        <option value="Salarie-prive">Salarié du secteur privé</option>
+                        <option value="fonctionnaire">Fonctionnaire</option>
+                        <option value="liberale">Profession libérale</option>
+                        <option value="commercant">Commerçant</option>
+                        <option value="artisan">Artisan</option>
+                        <option value="retraite">Retraité</option>
+                        <option value="autres">Autres professions</option>
+                    </select>
+            
+                    <div class="input-group">
+                        <label for="amount">Montant (en DH)</label>
+                        <input type="range" id="amount" min="5000" max="600000" value="10000" step="1000">
+                        <span id="amount-value">10000</span>
+                    </div>
+            
+                    <div class="input-group">
+                        <label for="duration">Durée (en mois)</label>
+                        <input type="range" id="duration" min="12" max="120" value="24" step="6">
+                        <span id="duration-value">24</span>
+                    </div>
+            
+                    <div class="input-group">
+                        <label for="monthly">Mensualités (en DH)</label>
+                        <input type="range" id="monthly" min="100" max="10000" value="469" step="50">
+                        <span id="monthly-value">469</span>
+                    </div>
+            
+                    <button type="button" class="next-btn">Continuer<br>Sans engagement</button>
+                </form>
+            </div>
             
         </div>
     </div>
