@@ -1,0 +1,39 @@
+$primary-color: #ffd700;
+$secondary-color: #8b8b8b;
+$font-family: "Arial", sans-serif;
+
+body {
+    font-family: $font-family;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.step-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    
+    .step {
+        padding: 10px;
+        background-color: $secondary-color;
+        color: white;
+        cursor: pointer;
+        text-align: center;
+        font-weight: bold;
+
+        &.active {
+            background-color: $primary-color;
+            color: black;
+        }
+    }
+}
