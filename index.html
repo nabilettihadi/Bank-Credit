@@ -15,7 +15,7 @@
             <div class="triangle"></div>
         </div>
         <div class="step-content">
-            <div class="step-content" id="step-1">
+            <div id="step-1">
                 <form id="loan-form">
                     <label for="project">Mon projet</label>
                     <select id="project">
@@ -39,23 +39,25 @@
             
                     <div class="input-group">
                         <label for="amount">Montant (en DH)</label>
+                        <div class="value-box" id="amount-value">10000</div>
                         <input type="range" id="amount" min="5000" max="600000" value="10000" step="1000">
-                        <span id="amount-value">10000</span>
                     </div>
+                    
             
                     <div class="input-group">
                         <label for="duration">Durée (en mois)</label>
+                        <div class="value-box" id="duration-value">24</div>
                         <input type="range" id="duration" min="12" max="120" value="24" step="6">
-                        <span id="duration-value">24</span>
+                        
                     </div>
             
                     <div class="input-group">
                         <label for="monthly">Mensualités (en DH)</label>
+                        <div class="value-box" id="monthly-value">469</div>
                         <input type="range" id="monthly" min="100" max="10000" value="469" step="50">
-                        <span id="monthly-value">469</span>
                     </div>
             
-                    <button type="button" class="next-btn">Continuer<br>Sans engagement</button>
+                    <button type="button" class="next-btn"><b>Continuer</b> <br> Sans engagement</button>
                 </form>
             </div>
             

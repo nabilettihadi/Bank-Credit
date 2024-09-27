@@ -12,7 +12,6 @@ body {
   margin: 0 auto;
   background-color: #fff;
   border-radius: 8px;
-  padding: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -21,7 +20,7 @@ body {
   position: relative;
   justify-content: space-around;
   margin-bottom: 20px;
-  padding: 10px;
+  background-color: #f9f9f9;
 }
 .step-nav .step {
   flex: 1;
@@ -40,17 +39,19 @@ body {
 .step-nav .triangle {
   position: absolute;
   bottom: -10px;
-  left: 0;
+  left: 50%;
   width: 0;
   height: 0;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   border-top: 10px solid #ffd700;
+  transform: translateX(-50%);
   transition: all 0.3s ease;
 }
 
 .step-content {
-  margin-top: 20px;
+  display: block;
+  margin: 5%;
 }
 .step-content form {
   display: flex;
@@ -72,23 +73,66 @@ body {
   border-radius: 10px;
 }
 .step-content form .input-group {
-  position: relative;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   margin-bottom: 20px;
 }
-.step-content form .input-group span {
+.step-content form .input-group label {
   font-weight: bold;
-  margin-left: 10px;
+  margin-bottom: 5px;
+  color: #30435c;
+}
+.step-content form .input-group .value-box {
+  width: 80px;
+  height: 30px;
+  background-color: #fff;
+  color: #00ced1;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #8b8b8b;
+  margin-bottom: 20px;
+}
+.step-content form .input-group input[type=range] {
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  background-color: #8b8b8b;
+  height: 2px;
+  outline: none;
+}
+.step-content form .input-group input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #ffd700;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 1px solid #ffd700;
+}
+.step-content form .input-group input[type=range]::-moz-range-thumb {
+  background-color: #ffd700;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
 }
 .step-content form button {
   padding: 10px;
   background-color: #00ced1;
-  border: none;
+  border: 2px solid white;
   border-radius: 4px;
   color: #fff;
   cursor: pointer;
-  font-weight: bold;
-  width: 25%;
-  margin-top: 10px;
+  width: 30%;
+  margin: 10px auto;
+  display: block;
+  text-align: center;
+  box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.1), 5px 5px 10px rgba(0, 0, 0, 0.1);
 }/*# sourceMappingURL=styles.css.map */
