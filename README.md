@@ -25,8 +25,6 @@ $$
 \text{Mensualités} = \frac{\text{Montant du prêt} \times \text{Taux mensuel}}{1 - (1 + \text{Taux mensuel})^{-\text{Durée}}}
 $$
 
-
-
 Où :
 
 - **Montant du prêt** est le capital emprunté.
@@ -34,8 +32,8 @@ Où :
 - **Durée** est le nombre total de mois.
 
 Le montant du prêt peut également être calculé à partir de la mensualité et de la durée :
-$$
 
+$$
 \text{Montant du prêt} = \frac{\text{Mensualité} \times (1 - (1 + \text{Taux mensuel})^{-\text{Durée}})}{\text{Taux mensuel}}
 $$
 
