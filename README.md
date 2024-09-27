@@ -21,9 +21,11 @@ Ce projet fournit une interface dynamique de simulation de crédit bancaire où 
 
 Le calcul des mensualités est réalisé à l’aide de la formule suivante :
 
-\[
+$$
 \text{Mensualités} = \frac{\text{Montant du prêt} \times \text{Taux mensuel}}{1 - (1 + \text{Taux mensuel})^{-\text{Durée}}}
-\]
+$$
+
+
 
 Où :
 
@@ -32,10 +34,10 @@ Où :
 - **Durée** est le nombre total de mois.
 
 Le montant du prêt peut également être calculé à partir de la mensualité et de la durée :
+$$
 
-\[
 \text{Montant du prêt} = \frac{\text{Mensualité} \times (1 - (1 + \text{Taux mensuel})^{-\text{Durée}})}{\text{Taux mensuel}}
-\]
+$$
 
 Dans ce projet, le taux d'intérêt est fixé à 4% par an, mais il peut être ajusté dans le fichier `script.js`.
 
