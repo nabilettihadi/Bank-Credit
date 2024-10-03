@@ -60,7 +60,7 @@
                 </form>
             </div>
         </div>
-
+        <div class="step-content">
         <div id="step-2" style="display: none">
             <form id="contact-form">
                 <label for="email">Email*</label>
@@ -75,46 +75,73 @@
                 </button>
             </form>
         </div>
-
+    </div>
+    <div class="step-content">
         <div id="step-3" style="display: none">
             <form id="personal-info-form">
-                <label for="civilite">Civilité</label>
-                <select id="civilite" required>
-                    <option value="madame">Madame</option>
-                    <option value="mademoiselle">Mademoiselle</option>
-                    <option value="monsieur">Monsieur</option>
-                </select>
-
-                <label for="nom">Nom*</label>
-                <input type="text" id="nom" required placeholder="Entrez votre nom" />
-
-                <label for="prenom">Prénom*</label>
-                <input type="text" id="prenom" required placeholder="Entrez votre prénom" />
-
-                <label for="cin">Numéro CIN / Carte de séjour*</label>
-                <input type="text" id="cin" required placeholder="Entrez votre CIN" />
-
-                <label for="date-naissance">Date de naissance*</label>
-                <input type="date" id="date-naissance" required />
-
-                <label for="date-embauche">Date d'embauche/début de l'activité*</label>
-                <input type="date" id="date-embauche" required />
-
-                <label for="revenus">Total revenus mensuels (net en DH)*</label>
-                <input type="number" id="revenus" required placeholder="Entrez vos revenus" />
-
-                <label>Avez-vous des crédits en cours ?</label>
-                <div>
-                    <input type="radio" id="credit-oui" name="credit" value="oui" required />
-                    <label for="credit-oui">Oui</label>
-                    <input type="radio" id="credit-non" name="credit" value="non" required />
-                    <label for="credit-non">Non</label>
+                <div class="form-group">
+                    <label>Civilité*</label>
+                    <div class="radio-group">
+                        <input type="radio" id="civilite-madame" name="civilite" value="madame" required />
+                        <label for="civilite-madame">Madame</label>
+    
+                        <input type="radio" id="civilite-mademoiselle" name="civilite" value="mademoiselle" required />
+                        <label for="civilite-mademoiselle">Mademoiselle</label>
+    
+                        <input type="radio" id="civilite-monsieur" name="civilite" value="monsieur" required />
+                        <label for="civilite-monsieur">Monsieur</label>
+                    </div>
                 </div>
-
-                <button type="submit" class="submit-btn"><b>Soumettre</b></button>
+    
+                <div class="form-group">
+                    <label for="nom">Nom*</label>
+                    <input type="text" id="nom" required placeholder="Entrez votre nom" />
+                </div>
+    
+                <div class="form-group">
+                    <label for="prenom">Prénom*</label>
+                    <input type="text" id="prenom" required placeholder="Entrez votre prénom" />
+                </div>
+    
+                <div class="form-group">
+                    <label for="cin">Numéro CIN / Carte de séjour*</label>
+                    <input type="text" id="cin" required placeholder="Entrez votre CIN" />
+                </div>
+    
+                <div class="form-group">
+                    <label for="date-naissance">Date de naissance*</label>
+                    <input type="date" id="date-naissance" required />
+                </div>
+    
+                <div class="form-group">
+                    <label for="date-embauche">Date d'embauche/début de l'activité*</label>
+                    <input type="date" id="date-embauche" required />
+                </div>
+    
+                <div class="form-group">
+                    <label for="revenus">Total revenus mensuels (net en DH)*</label>
+                    <input type="number" id="revenus" required placeholder="Entrez vos revenus" />
+                </div>
+    
+                <div class="form-group">
+                    <label>Avez-vous des crédits en cours ?</label>
+                    <div class="radio-group">
+                        <input type="radio" id="credit-oui" name="credit" value="oui" required />
+                        <label for="credit-oui">Oui</label>
+                        <input type="radio" id="credit-non" name="credit" value="non" required />
+                        <label for="credit-non">Non</label>
+                    </div>
+                </div>
+    
+                <div class="button-group">
+                    <button type="submit" class="next-btn"><b>Demander ce Crédit</b></button>
+                    <button type="submit" class="next-btn"><b>Voir Mon Récapitulatif</b></button>
+                </div>
             </form>
         </div>
     </div>
+    
+</div>
     <script src="script.js"></script>
 </body>
 </html>

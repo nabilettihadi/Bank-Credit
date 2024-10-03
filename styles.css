@@ -87,7 +87,7 @@ body {
   width: 80px;
   height: 30px;
   background-color: #fff;
-  color: #00ced1;
+  color: #02afbc;
   font-size: 24px;
   display: flex;
   justify-content: center;
@@ -125,7 +125,7 @@ body {
 }
 .step-content form button {
   padding: 10px;
-  background-color: #00ced1;
+  background-color: #02afbc;
   border: 2px solid white;
   border-radius: 4px;
   color: #fff;
@@ -135,4 +135,86 @@ body {
   display: block;
   text-align: center;
   box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.1), 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+.step-content form .button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+input[type=email],
+input[type=tel] {
+  padding: 10px;
+  font-size: 16px;
+  width: 80%;
+  outline: none;
+  background-color: #fff;
+  border: none;
+  border-bottom: 2px solid #8b8b8b;
+  color: #028c96;
+  transition: border-bottom-color 0.3s ease;
+  margin-bottom: 5px;
+}
+input[type=email]::-moz-placeholder, input[type=tel]::-moz-placeholder {
+  color: #8b8b8b;
+  opacity: 0.7;
+}
+input[type=email]::placeholder,
+input[type=tel]::placeholder {
+  color: #8b8b8b;
+  opacity: 0.7;
+}
+
+input[type=text],
+input[type=number],
+input[type=date] {
+  padding: 10px;
+  font-size: 16px;
+  width: 95%;
+  outline: none;
+  background-color: #fff;
+  border: none;
+  border-bottom: 2px solid #8b8b8b;
+  color: #02afbc;
+  transition: border-bottom-color 0.3s ease;
+}
+input[type=text]:focus,
+input[type=number]:focus,
+input[type=date]:focus {
+  border-bottom-color: #02afbc;
+}
+input[type=text]::-moz-placeholder, input[type=number]::-moz-placeholder, input[type=date]::-moz-placeholder {
+  color: #8b8b8b;
+  opacity: 0.7;
+}
+input[type=text]::placeholder,
+input[type=number]::placeholder,
+input[type=date]::placeholder {
+  color: #8b8b8b;
+  opacity: 0.7;
+}
+input[type=text] label,
+input[type=number] label,
+input[type=date] label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #30435c;
+}
+
+.radio-group {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.radio-group input[type=radio] {
+  margin-right: 10px;
+  accent-color: #02afbc;
+  cursor: pointer;
+}
+.radio-group label {
+  margin-right: 20px;
+  font-weight: bold;
+  color: #30435c;
+  cursor: pointer;
 }/*# sourceMappingURL=styles.css.map */
